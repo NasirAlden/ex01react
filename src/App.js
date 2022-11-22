@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './components/header';
 
 function App() {
+  let imageUrl = "images/marvel.jpg";
+  let title = "Lorem ipsum dolor sit";
+  let description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturiautem, laboriosam"
+  +"minima a error necessitatibus similique quae,"
+  +"accusamus, facere deserunt officia tempore ab eum maiores!";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Header src={imageUrl} title={title} description={description}/>
   );
 }
 
 export default App;
+
